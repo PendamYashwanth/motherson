@@ -5,19 +5,18 @@
 .projects-bg-container ul {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 2rem;
 }
 
 .projects-bg-container ul li {
   display: flex;
   justify-content: space-between;
-  gap: 1.6rem;
   background-color: var(--bg-secondary);
   border-radius: 2rem;
 }
 
-.project-description {
-  min-height: 30rem;
+.project-description-container {
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,11 +25,18 @@
   padding: 2rem;
 }
 
-.project-description h3 {
-  font-size: 4rem;
+.project-description-container h3 {
+  font-family: "PlayFair Display";
+  font-size: 2rem;
 }
 
-.project-description p {
+@media screen and (min-width: 768px) {
+  .project-description-container h3 {
+    font-size: 4rem;
+  }
+}
+
+.project-description-container p {
   font-size: 1.4rem;
 }
 
@@ -41,15 +47,21 @@
 }
 
 .project-img-container {
-  height: 100%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem;
 }
 
-.project-img {
-  max-height: 30rem;
+.project-img-right {
+  width: 100%;
+  height: auto;
   border-radius: 0 2rem 2rem 0;
+}
+
+.project-img-left {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem 0 0 2rem;
 }

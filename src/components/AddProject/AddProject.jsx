@@ -3,6 +3,14 @@ import { v4 as uuid4 } from "uuid";
 import portfolioContext from "../../context/portfolioContext";
 import "./index.css";
 
+const imageUrlList = [
+  "https://res.cloudinary.com/dhaj9wlmu/image/upload/v1704433747/pexels-elly-fairytale-3823207_1_bkpfjm.png",
+  "https://res.cloudinary.com/dhaj9wlmu/image/upload/v1704433829/Rectangle_7_1_hfap7a.png",
+  "https://res.cloudinary.com/dhaj9wlmu/image/upload/v1704433835/Rectangle_7_2_e7pdvl.png",
+];
+
+const randomImageUrlIndex = Math.floor(Math.random() * imageUrlList.length);
+
 class AddProject extends Component {
   state = { name: "", link: "", description: "" };
   /*--------------------ADD PROJECT------------------------ */
@@ -13,9 +21,10 @@ class AddProject extends Component {
       name,
       link,
       description,
-      img: "https://res.cloudinary.com/dhaj9wlmu/image/upload/v1704433835/Rectangle_7_2_e7pdvl.png",
+      img: imageUrlList[randomImageUrlIndex],
     };
     addProject(projectItem);
+    this.setState({ name: "", link: "", description: "" });
   };
   /*===========================================================*/
 
@@ -26,7 +35,6 @@ class AddProject extends Component {
   };
 
   onChangeName = (event) => {
-    console.log(event.target.value);
     this.setState({ name: event.target.value });
   };
 
@@ -86,7 +94,7 @@ class AddProject extends Component {
                   </section>
                   <section className="add-btn-container">
                     <button type="submit" className="btn">
-                      add
+                      Add
                     </button>
                   </section>
                 </form>

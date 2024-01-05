@@ -2,11 +2,11 @@ import "./index.css";
 
 const Home = () => {
   return (
-    <article id="about" className="container about-container">
+    <article id="about" className="container about-container mb">
       <section>
         <h3>MERN Full-Stack Developer</h3>
         <h1>Hello, my name is Yashwanth Pendam</h1>
-        <p>
+        <p className="mb">
           With a focus on MongoDB* , along with expertise in Express.js, React,
           and Node.js, I specialize in developing dynamic and responsive
           applications that enhance user engagement.
