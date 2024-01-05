@@ -1,0 +1,26 @@
+.contacts-bg-container {
+  height: 30vh;
+  background-image: url("https://res.cloudinary.com/dhaj9wlmu/image/upload/v1704429615/Vector_aw2tag.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: bottom;
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.icons {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  color: var(--color-secondary);
+}
+
+.contacts-bg-container p {
+  text-align: center;
+  margin-top: 1.2rem;
+}

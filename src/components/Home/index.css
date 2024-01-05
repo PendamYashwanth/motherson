@@ -1,0 +1,9 @@
+.home-bg-container {
+  height: 100vh;
+  background-image: url("https://res.cloudinary.com/dhaj9wlmu/image/upload/v1704426723/image_h5wkuu.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: top;
+  display: flex;
+  flex-direction: column;
+}

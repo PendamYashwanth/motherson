@@ -1,0 +1,26 @@
+.header-section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.website-logo {
+  font-family: "Comfortaa";
+  font-size: 1.8rem;
+}
+
+.nav-items-container {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.nav-links {
+  font-family: "Raleway";
+  font-size: 1.4rem;
+  color: var(--color-primary);
+}
+
+.nav-links:hover {
+  font-weight: 700;
+}

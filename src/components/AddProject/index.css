@@ -1,0 +1,21 @@
+.add-projects-bg-container {
+  height: 100vh;
+  background-image: url("https://res.cloudinary.com/dhaj9wlmu/image/upload/v1704429615/Vector_aw2tag.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: bottom;
+}
+
+.add-projects-bg-container form {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.input-field-container {
+  margin-bottom: 1.2rem;
+}
+
+.add-btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
